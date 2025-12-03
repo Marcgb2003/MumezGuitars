@@ -79,7 +79,13 @@
   line-height: 1.5;
 }
 
-
+/* Tablet / small desktop */
+@media (max-width: 810px) {
+  .services {
+    flex-direction: column;
+    gap: 3vw;
+  }
+}
 /* Mobile phones */
 @media (max-width: 480px) {
   .product-showcase {
