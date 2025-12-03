@@ -6,3 +6,53 @@
   justify-items: center;
   padding: 2vw;
 }
+.product img {
+  width: 75%;
+  height: auto;
+  max-width: 250px;
+  border-radius: 0.5vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.product figcaption {
+  margin-top: 0.5vw;
+  font-size: clamp(0.9rem, 1vw, 1.2rem);
+  text-align: center;
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .allGuitarsShowcase {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3vw;
+  }
+
+  .services {
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .service {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .service img {
+    width: 50vw;
+    max-width: 60vw;
+    margin-bottom: 1vw;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 3vw;
+    font-size: 1.5vw;
+  }
+
+  .footer-section {
+    min-width: 100%;
+  }
+}

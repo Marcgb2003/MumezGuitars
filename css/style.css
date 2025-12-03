@@ -53,6 +53,11 @@ body {
   align-items: center;
   transition: background-color 0.3s;
 }
+
+.navbutton:hover {
+  background-color: rgb(180, 180, 180);
+  color: black;
+}
 /* FOOTER */
 .footer {
   display: flex;
@@ -112,38 +117,3 @@ body {
   }
 }
 
-/* Mobile phones */
-@media (max-width: 480px) {
-  .product-showcase {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3vw;
-  }
-
-  .services {
-    flex-direction: column;
-    gap: 3vw;
-  }
-
-  .service {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-  }
-
-  .service img {
-    width: 50vw;
-    max-width: 60vw;
-    margin-bottom: 1vw;
-  }
-
-  .footer {
-    flex-direction: column;
-    gap: 3vw;
-    font-size: 1.5vw;
-  }
-
-  .footer-section {
-    min-width: 100%;
-  }
-}
